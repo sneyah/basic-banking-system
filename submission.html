@@ -41,7 +41,7 @@
           }
           
           form{
-              height: 520px;
+              height: 680px;
               width: 400px;
               background-color: rgba(255,255,255,0.13);
               position: absolute;
@@ -167,6 +167,10 @@
   letter-spacing:0;
 }
 
+
+
+
+
 </style>
  
     
@@ -175,11 +179,15 @@
 <body class="background">
     <form>
         <h3>Transaction Details</h3>
-        <label for="username">Transfer To</label>
+        <label for="username">Sender</label>
         <input type="text" placeholder="Name" id="username">
-        <label for="email">Email</label>
+        <label for="email">Sender's email</label>
         <input type="email" placeholder="Email" id="email">
-        <label for="amount">Transfer Amount</label>
+        <label for="username">Receiver</label>
+        <input type="text" placeholder="Name" id="username">
+        <label for="email">Receiver's email</label>
+        <input type="email" placeholder="Email" id="email">
+        <label for="amount">Amount</label>
         <input type="number" placeholder="Amount" id="amount"><br>
        <center> <a href="#" class="buttonn buttonn-white buttonn-animated" onclick="openPopup()">Send</a></center>
     </form>
@@ -199,6 +207,6 @@
         popup.classList.remove("open-popup");
     }
 </script>
-   
+
 </body>
 </html>
