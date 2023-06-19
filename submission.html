@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmission</title> 
+  <style>  
+   .background {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(255, 133, 76, 0.8),
+   rgba(217, 30, 123, 0.8)),
+   url('image1.jpg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    margin-top: 0%;
+    padding-top: 0%;
+}
+                *,
+          *:before,
+          *:after{
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;
+          }
+          body{
+              background-color: #080710;
+          }
+          .backgroundf{
+              width: 430px;
+              height: 520px;
+              position: absolute;
+              transform: translate(-50%,-50%);
+              left: 50%;
+              top: 50%;
+          }
+          
+          form{
+              height: 520px;
+              width: 400px;
+              background-color: rgba(255,255,255,0.13);
+              position: absolute;
+              transform: translate(-50%,-50%);
+              top: 50%;
+              left: 50%;
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              border: 2px solid rgba(255,255,255,0.1);
+              box-shadow: 0 0 40px rgba(8,7,16,0.6);
+              padding: 50px 35px;
+          }
+          form *{
+              font-family: 'Poppins',sans-serif;
+              color: #ffffff;
+              letter-spacing: 0.5px;
+              outline: none;
+              border: none;
+          }
+          form h3{
+              font-size: 32px;
+              font-weight: 500;
+              line-height: 42px;
+              text-align: center;
+          }
+          
+          label{
+              display: block;
+              margin-top: 30px;
+              font-size: 16px;
+              font-weight: 500;
+          }
+          input{
+              display: block;
+              height: 50px;
+              width: 100%;
+              background-color: rgba(255,255,255,0.07);
+              border-radius: 3px;
+              padding: 0 10px;
+              margin-top: 8px;
+              font-size: 14px;
+              font-weight: 300;
+          }
+          ::placeholder{
+              color: #e5e5e5;
+          }
+          
+          
+.buttonn:link,
+.buttonn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.buttonn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttonnn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+.popup{
+    width: 450px;
+    
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #5e85ee;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+*{
+  font-weight:400;
+  font-family:Means Web,Georgia,Times,Times New Roman,serif;
+  -webkit-font-variant-ligatures:none;
+  font-variant-ligatures:none;
+  font-size:var(--h1-size);
+  line-height:var(--h3-line);
+  letter-spacing:0;
+}
+
+</style>
+ 
+    
+  
+</head>
+<body class="background">
+    <form>
+        <h3>Transaction Details</h3>
+        <label for="username">Transfer To</label>
+        <input type="text" placeholder="Name" id="username">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email">
+        <label for="amount">Transfer Amount</label>
+        <input type="number" placeholder="Amount" id="amount"><br>
+       <center> <a href="#" class="buttonn buttonn-white buttonn-animated" onclick="openPopup()">Send</a></center>
+    </form>
+   <div class="popup" id="popup">
+    
+        <h2>Done!</h2>
+        <p>Transaction successful</p>
+        <button type="button" onclick="closePopup()">OK</button>
+   
+   </div>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+   
+</body>
+</html>
