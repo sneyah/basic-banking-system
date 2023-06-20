@@ -130,7 +130,7 @@
 </style>
 </head>
 <body class="background">
-    <form action="transactiondemo.php" method="post">
+    <form action="http://localhost/sneha/transactiondemo.php" method="post">
         <h3>Transaction Details</h3>
         <label for="username">Sender</label>
         <input type="text" placeholder="Name" id="sname">
