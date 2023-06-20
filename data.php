@@ -270,7 +270,7 @@ if($num> 0){
 
 </tr>
 </tbody>
-</table><br><center><a href="submission.html" class="btnn btnn-white btnn-animated">Transfer Money</a></center>
+</table><br><center><a href="http://localhost/sneha/submission.php" class="btnn btnn-white btnn-animated">Transfer Money</a></center>
 
 </body>
 </html>
