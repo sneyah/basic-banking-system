@@ -142,7 +142,7 @@
         <input type="email" placeholder="Email" id="remail">
         <label for="amount">Amount</label>
         <input type="number" placeholder="Amount" id="amount"><br>
-       <center> <a href="transactiondemo.php" class="buttonn buttonn-white buttonn-animated" onclick="openPopup()">Send</a></center>
+       <center> <a href="http://localhost/sneha/transactiondemo.php" class="buttonn buttonn-white buttonn-animated" onclick="openPopup()">Send</a></center>
     </form>
   
  
